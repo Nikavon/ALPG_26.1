@@ -12,25 +12,13 @@ lado_1 = int(input("Digite o primeiro lado: "))
 lado_2 = int(input("Digite o segundo lado: "))
 lado_3 = int(input("Digite o terceiro lado: "))
 
-if lado_1 < lado_2 + lado_3:
-    if lado_2 < lado_1 + lado_3:
-        if lado_3 < lado_1 + lado_2:
-            print("Os lados formam um triângulo")
-        else:
-            print("Os lados não formam um triângulo")
+if lado_1 < lado_2 + lado_3 and lado_2 < lado_1 + lado_3 and lado_3 < lado_1 + lado_2:
+    print("Os lados formam um triângulo")
+    if lado_1 == lado_2 == lado_3:
+        print("Esse é um triângulo equilátero")
+    elif lado_1 == lado_2 or lado_2 == lado_3 or lado_1 == lado_3: 
+        print("Esse é um triângulo isósceles")
     else:
-        print("Os lados não formam um triângulo")
+        print("Esse é um triângulo escaleno")
 else:
-    print("Os lados não formam um triângulo")
-    
-if lado_1 == lado_2 == lado_3:
-    print("Esse é um triângulo equilátero")
-if lado_1 == lado_2 != lado_3: 
-    print("Esse é um triângulo isósceles")
-if lado_1 != lado_2 == lado_3:
-    print("Esse é um triângulo isósceles")
-if lado_1 != lado_2 != lado_3:
-    print("Esse é um triângulo escaleno")
-    
-
- 
+    print("Os lados não formam um triângulo")        
