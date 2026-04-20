@@ -21,9 +21,9 @@ sudeste = ["SP", "RJ", "MG", "ES"]
 
 if carrinho > 150 and estado in sudeste:
     frete = 0.00
-elif estado in sudeste:
+elif carrinho <= 150 and estado in sudeste:
     frete = 15.00
-else:
+elif estado not in sudeste:
     frete = 35.00
 
-print("Valor total final: R$120", carrinho + frete)    
+print("Valor total final: R$", carrinho + frete)    
