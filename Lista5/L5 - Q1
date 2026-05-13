@@ -1,0 +1,14 @@
+'''
+Q1. (FOR) Elabore um algoritmo que simule uma tabuada
+'''
+def tabuada():
+    print("Tabuada de 1 a 10")
+    
+    for numero in range (1, 11):
+        print(f"\nTabuada do {numero}:")
+        
+        for multiplicador in range(1, 11):
+            resultado = numero * multiplicador
+            print(f"{numero:2} x {multiplicador:2} = {resultado:3}")
+
+tabuada()       
